@@ -1,0 +1,108 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+@font-face {
+    font-family: 'fira_monoregular';
+    src: url('firamono-regular-webfont.woff2') format('woff2'),
+         url('firamono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'fira_monoregular';
+    background: linear-gradient(90deg, #93e1b8 19px, transparent 1%) center, linear-gradient(#93e1b8 19px, transparent 1%) center, #3cb569;
+    background-size: 20px 20px;
+    color: #334455;
+    font-size: 12px;
+}
+.container{
+    width: 1024px;
+    margin: 120px auto;
+}
+.beef-container,.bouquet-container{
+    width: 500px;
+    float: left;
+
+}
+.beef-container{
+    margin-right: 24px;
+}
+h1{
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 40px 0;
+}
+h2{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 36px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 25px;
+}
+li{
+    min-height: 50px;
+    line-height: 18px;
+    /* border-bottom: 1px dotted #9EAAB6; */
+    background: #fff;
+    padding: 16px;
+    box-shadow: 2px 2px 6px rgba(14,61,113,.2);
+    border-radius: 2px;
+    margin: 15px 0;
+    position: relative;
+}
+li:last-child{
+    border: 0;
+}
+li.input{
+    background: #c9f9e0;
+}
+li span{
+    color: #c3d2e0;
+}
+.remove{
+    display: none;
+    position: absolute;
+    color: #fff;
+    background: #e0a794;
+    border: 0;
+    border-radius: 20px;
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 6px;
+    text-decoration: none;
+    top: 15px;
+    right: 15px;
+}
+li:hover .remove{
+    display: block;
+}
+.remove:hover{
+    background: #db8a72;
+    cursor: pointer;
+}
+input{
+    display: block;
+    width: 100%;
+    line-height: 18px;
+    border: 0;
+    font-family: 'fira_monoregular';
+    font-size: 13px;
+    color: #65819a;
+    background: rgba(255,255,255,0);
+}
